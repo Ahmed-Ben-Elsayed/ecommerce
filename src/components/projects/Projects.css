@@ -1,0 +1,102 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px!important;
+    margin-bottom: 40px!important;
+}
+.product{
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius:15px;
+}.product:hover{
+    transition: 0.6s;
+    transform: scale(1.05);
+}
+.product div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.product h1{
+    font-size: 20px;
+}
+.product img{
+    width: 150px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 10px;
+}.product .prev{
+    color: grey;
+}
+ .stars{
+    display: flex;
+    color: #FFD333;
+    /* justify-content: center; */
+    align-items: center!important;
+    gap:0px;
+}
+.product p{
+    font-size: 20px;
+}
+.product .prev{
+    font-size: 17px;
+}
+.product .add-like{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+
+}
+.product .add{
+    color: black;
+    padding: 5px;
+    background-color: #FFD333;
+    font-size: 30px;
+}
+.product button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.product .add:hover{
+    background-color: #3D464D;
+    transition: 0.4s;
+    color:#FFD333;
+}
+@media screen and (max-width:480px) {
+    .products{
+        margin: auto;
+    }
+    .product{
+        width: 75%;
+    }
+  }
+  
+   @media screen and (min-width:481px) and (max-width:768px) {
+    .products{
+        margin: auto;
+        margin-top: 20px;
+        display: flex!important;
+        flex-direction: row!important;
+        gap: 70px;
+    }
+    .product{
+        width:34%;
+    }
+  }

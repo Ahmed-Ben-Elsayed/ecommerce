@@ -1,0 +1,48 @@
+.props{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.props div{
+    background-color: white;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    gap: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    height: 50px;
+}
+.props h1{
+    font-size: 20px;
+}
+.prop-icon{
+    color:#FFD333;
+    font-size: 40px;
+}
+@media screen and (max-width:480px) {
+    .props{
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .props div{
+        width: 70%;
+        margin: auto;
+    }
+}
+
+   @media screen and (min-width:481px) and (max-width:768px) {
+    .props{
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .props div{
+        width: 40%;
+        margin: auto;
+    }
+   }

@@ -1,0 +1,157 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  /* overflow-x: hidden; */
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  background-color: #eee;
+  z-index:1000;
+  overflow-x: hidden;
+  height: max-content;
+}
+.header{
+  position: relative;
+  overflow: hidden;
+}nav{
+  position: sticky !important;;
+  top: 0px;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+:root{
+  --maincolor: #FFD333;
+}
+.arow{
+  /* position: absolute; */
+  /* z-index: 20;
+  bottom: 10px;
+  right: 20px; */
+  font-size: 30px;
+  color: #FFD333;
+  position: fixed;
+  bottom:15px;
+  right: 20px;
+  cursor: pointer;
+  transition: 0.6s;
+  background-color: black;
+  border-radius: 5px;
+  animation-name: arr;
+  animation-duration:2s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+.arr{
+  transition: 0.6s;
+  background-color: black;
+ position: absolute;
+ bottom:15px;
+ right: 20px;
+ display: none;
+}
+
+@keyframes arr {
+  0%{
+      bottom:20px;
+  }
+  50%{
+      bottom: 11px;
+  }
+  100%{
+    bottom: 20px;
+  }
+}
+.spinner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 300px;
+  text-align: center!important;
+  margin: auto;
+  margin: 150px auto;
+  color: #FFD333;
+  animation: spinner 1s infinite;
+}
+@keyframes spinner {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.dark{
+  background-color: black!important;
+  color: white;
+}
+.dark .props div {
+  background-color:gray;
+}
+.dark .cat .ca{
+  background-color: grey;
+}
+.dark .product{
+  background-color: gray;
+
+}
+.dark .Shopdatils .shop-info-img{
+  background-color: #222;
+}
+.dark .Shopdatils .text{
+  background-color: gray;
+  color: white;
+}
+.dark .Shopdatils .text p{
+  color: rgb(192, 192, 192);
+  text-align: center;
+}.dark  .product-t{
+  background-color: #222;
+}
+.dark .product-t h4{
+  color: white!important;
+}
+.dark .cart-right{
+  background-color: #222;
+}.dark .img-info{
+  background-color: #222;
+}
+.dark .text{
+  background-color: #222;
+}.dark .stars h5{
+ color: white;
+}
+.dark .product-f{
+  background-color: #222!important;
+}
+.dark .Check-left{
+  background-color: #222;
+}
+.dark .Check-left p{
+  color: white;
+}
+.dark .Check-right {
+  background-color: #222!important;
+}
+.dark form{
+  background-color: #222!important;
+}.dark .if{
+
+  background-color: #222;
+}
+.dark .inf{
+  background-color: #222;
+  color: white!important;
+}.dark .inf span {
+  color: #eee;
+}
+.spinner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+}

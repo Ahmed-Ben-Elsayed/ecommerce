@@ -1,0 +1,226 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3D464D;
+    color: aliceblue;
+    position: sticky;
+    padding: 15px 40px;
+    top: 0;
+    z-index: 10000;
+}
+nav .nav-left span {
+    color: #FFD333;
+    font-size: 25px;
+}
+nav .nav-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    z-index: 1000;
+}
+nav .nav-middle a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    z-index: 1000;
+}
+nav .nav-middle a:hover{
+    color: #FFD333;
+    transition: 0.5s;
+}
+nav .nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+nav .nav-right .nav-icon{
+    color: #FFD333;
+    font-size: 23px;
+    cursor: pointer;
+}
+nav .nav-right div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}.nav-right a{
+    text-decoration: none;
+    color: white;
+}
+.pag{
+    position: relative;
+    /* z-index: 10; */
+}
+.pages{
+    background-color: #FFD333;
+    position: absolute;
+    bottom:-170px;
+    padding: 0px 0px;
+    left: -90%;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    list-style: none;
+    color: black;
+    width: 250px;
+
+}
+.pages li a{
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 14px 0px;
+    text-align: center;
+}.pages li a:hover{
+    width: 100%;
+    color: black;
+}.pages li:hover{
+    background-color: #ffffff;
+     width: 100%;
+}
+nav .nav-right div span{
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 4px;
+    text-align: center;
+    border-radius: 50%;
+}.menu{
+    font-size: 30px;
+    color: #FFD333;
+    display: none;
+    cursor: pointer;
+}.border{
+    border-bottom: 1px solid #3D464D    ;
+}.nav-middle-down{
+    top: 71px!important;
+    transition: 0.5s;
+}
+.nav-middle-up{
+    top:-371px;
+    transition: 0.5s;
+}.moon{
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 15px;
+    list-style: none!important;
+}.sun{
+    list-style: none!important;
+    font-size: 20px;
+    cursor: pointer;
+    animation: sun 3s infinite;
+}
+@keyframes sun {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width:480px) {
+ .nav-middle{
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top:-671px;
+    padding-top: 30px;
+    background-color: #3D464D;
+    width: 100%;
+    margin: auto!important;
+    left: 0px;
+    z-index:10;
+    padding-bottom: 20px;
+ }
+ .pages li:hover{
+    background-color: transparent;
+     width: 100%;
+}
+ nav{
+    justify-content: space-between;
+    padding:20px 15px ;
+ }
+ .menu{
+    display: flex;
+    margin-left: 20px;
+ }
+ .pages{
+    position: relative;
+    background-color: transparent;
+    position: static;
+    color: white;
+    bottom:-170px;
+    padding: 0px 0px;
+    left: -90%;
+    z-index: 200;
+    margin: 20px auto;
+    margin-bottom:0px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    list-style: none;
+    width: 250px;
+    color: white;
+ }
+  .wh{
+    color: white!important;
+ }
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+ .nav-middle{
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top:-581px;
+    padding-top: 30px;
+    background-color: #3D464D;
+    width: 100%;
+    margin: auto!important;
+    left: 0px;
+    z-index:10;
+    padding-bottom: 20px;
+ }
+ nav{
+    justify-content: space-between;
+    padding:20px 15px ;
+ }
+ .menu{
+    display: flex;
+    margin-left: 20px;
+ }.pages li:hover{
+    background-color:transparent;
+     width: 100%;
+}
+ .pages{
+    position: relative;
+    background-color: transparent;
+    position: static;
+    color: white;
+    bottom:-180px;
+    padding: 0px 0px;
+    left: -90%;
+    z-index: 200;
+    margin: 20px auto;
+    margin-bottom:0px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    list-style: none;
+    width: 250px;
+    color: white;
+ }
+  .wh{
+    color: white!important;
+ }
+}

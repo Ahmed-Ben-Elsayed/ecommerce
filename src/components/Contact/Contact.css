@@ -1,0 +1,160 @@
+.Contact h1{
+    text-align: center;
+    margin: 40px 0px;
+}
+.Contact .con{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    margin: auto;
+    margin-bottom: 30px;
+    overflow-x: hidden;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: white;
+    padding-left: 20px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    width:50%;
+    border-radius: 10px;
+}
+
+form input{
+    width: 90%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border: solid #ccc 1px;
+}
+textarea{
+    width: 40%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border: solid #ccc 1px;
+}
+form button{
+    background-color:#FFD333;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+form button:hover{
+    color: white;
+    background-color:#3D464D;
+    transition: 0.4s;
+}
+::placeholder{
+    /* font-weight: bolder; */
+    font-size: 16px;
+}.if{
+    /* width: %; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+}
+iframe{
+    width: 100%;
+    height: 270px;
+    margin: auto;
+}.con-right{
+    width: 40%;
+    margin-right: 10px;
+    display: flex;
+flex-direction: column;
+
+}
+.inf{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%;
+}
+.icons{
+    color: #FFD333;
+    font-size: 20px;
+}
+.con span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: gray;
+    
+}
+@media screen and (max-width:480px) {
+    .con{
+        flex-direction: column;
+    }
+    form{
+        width: 90%;
+        margin: auto;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+    textarea{
+        width: 60%;
+    }
+    .con-right{
+        margin: auto;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }.if{
+        padding: 0px;
+        border-radius: 10px;
+    }  .inf{
+        margin-bottom: 30px;
+        padding-left: 50px;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+    .con{
+        flex-direction: column;
+    }
+    form{
+        width: 90%;
+        margin: auto;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+    textarea{
+        width: 60%;
+    }
+    .con-right{
+        margin: auto;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    iframe{
+        height: 380px;
+    }.if{
+        padding: 0px;
+        border-radius: 10px;
+    }
+    .inf{
+        margin-bottom: 30px;
+        padding-left: 50px;
+    }
+}

@@ -1,0 +1,129 @@
+.Check  h1{
+ text-align: start;
+ font-size:20px;
+ margin-bottom: 10px;
+}
+.Check{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.Check-left{
+    background-color: white;
+    width: 60%;
+    padding: 20px;
+    height: max-content;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.info .name{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.info input{
+    padding: 10px;
+    outline: none;
+    border: 0.5px solid #ddd;
+}.info select {
+    padding: 10px;
+    outline: none;
+    border: 0.5px solid #ddd;
+
+}
+.name p{
+    color: gray;
+}
+.info ::placeholder{
+    color:rgb(182, 177, 177);
+}
+.Check-right{
+    background-color: white;
+    padding: 15px;
+    width: 30%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}.ch-up div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: grey;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.ch-up h4{
+    margin-top: 20px;
+}
+.ch-middle div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.check-down{
+    margin-top: 20px;
+
+}.check-down div{
+    display: flex;
+    justify-content:start;
+    gap: 10px;
+    margin-top: 10px;
+}
+.check-down input{
+    color: #FFD333!important;
+    background-color: #FFD333!important;
+}
+.check-down button{
+    background-color: #FFD333;
+    padding: 10px;
+    font-size: 18px;
+    border:none;
+    cursor: pointer;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+}.ch-middle h5{
+    text-align: left!important;
+}
+@media screen and (max-width:480px) {
+    .Check{
+        flex-wrap: wrap;
+    }
+    .Check-left{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .Check-right{
+        width: 100%;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+    .Check{
+        flex-wrap: wrap;
+    }
+    .Check-left{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .Check-right{
+        width: 100%;
+    }
+}

@@ -1,0 +1,14 @@
+.com{
+  margin: 50px  auto;
+  /* margin-left: 100PX; */
+  overflow-x: hidden;
+}
+.com div{
+  width: 75%;
+  margin: auto;
+  cursor: pointer;
+  overflow-x: hidden;
+}
+.com div img{
+    width: 100%;
+}
